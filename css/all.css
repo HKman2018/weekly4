@@ -426,47 +426,47 @@ a {
   padding-bottom: 8%; }
   @media (max-width: 992px) {
     .productDiamond .bg-img {
-      background: url("../../images/diamondPad.png") no-repeat;
+      background: url("../images/diamondPad.png") no-repeat;
       background-size: cover;
       width: 12.4%;
       padding-bottom: 11.5%; } }
   @media (max-width: 767px) {
     .productDiamond .bg-img {
-      background: url("../../images/diamondMobile.svg") no-repeat;
+      background: url("../images/diamondMobile.svg") no-repeat;
       width: 14%;
       padding-bottom: 11.5%; } }
 
 .productSun .bg-img {
-  background: url("../../images/productSun.png") no-repeat;
+  background: url("../images/productSun.png") no-repeat;
   background-size: cover;
   width: 9%;
   padding-bottom: 9%; }
   @media (max-width: 992px) {
     .productSun .bg-img {
-      background: url("../../images/sunPad_1.png") no-repeat;
+      background: url("../images/sunPad_1.png") no-repeat;
       background-size: cover;
       width: 12%;
       padding-bottom: 11.5%; } }
   @media (max-width: 767px) {
     .productSun .bg-img {
-      background: url("../../images/sunMobile.svg") no-repeat;
+      background: url("../images/sunMobile.svg") no-repeat;
       width: 12%;
       padding-bottom: 11.5%; } }
 
 .productFlash .bg-img {
-  background: url("../../images/productFlash.png") no-repeat;
+  background: url("../images/productFlash.png") no-repeat;
   background-size: cover;
   width: 8%;
   padding-bottom: 9.5%; }
   @media (max-width: 992px) {
     .productFlash .bg-img {
-      background: url("../../images/flashPad.png") no-repeat;
+      background: url("../images/flashPad.png") no-repeat;
       background-size: cover;
       width: 9%;
       padding-bottom: 11.5%; } }
   @media (max-width: 767px) {
     .productFlash .bg-img {
-      background: url("../../images/flashMobile.svg") no-repeat;
+      background: url("../images/flashMobile.svg") no-repeat;
       width: 9%;
       padding-bottom: 11.5%; } }
 
@@ -513,14 +513,14 @@ a {
           right: 0;
           bottom: 0;
           opacity: 1;
-          background: url("../../images/2.png") no-repeat;
+          background: url("../images/2.png") no-repeat;
           background-size: cover; } }
     @media (max-width: 767px) {
       .newItem .optiPhoto-l img {
         display: block;
         padding-bottom: 44%; }
       .newItem .optiPhoto-l::before {
-        background: url("../../images/2Mobile.png") no-repeat;
+        background: url("../images/2Mobile.png") no-repeat;
         background-size: cover; } }
   .newItem .optiPhoto-r {
     width: 100%;
@@ -540,14 +540,14 @@ a {
           right: 0;
           bottom: 0;
           opacity: 1;
-          background: url("../../images/11.png") no-repeat;
+          background: url("../images/11.png") no-repeat;
           background-size: cover; } }
     @media (max-width: 767px) {
       .newItem .optiPhoto-r img {
         display: block;
         padding-bottom: 44%; }
       .newItem .optiPhoto-r::before {
-        background: url("../../images/11Mobile.png") no-repeat;
+        background: url("../images/11Mobile.png") no-repeat;
         background-size: cover; } }
 
 .styleName {
@@ -697,13 +697,13 @@ a {
           right: 0;
           bottom: 0;
           opacity: 1;
-          background: url("../../images/80.png") no-repeat;
+          background: url("../images/80.png") no-repeat;
           background-size: cover; } }
     @media (max-width: 767px) {
       .newItem-sun .sunglassPhoto-l img {
         padding-bottom: 44%; }
       .newItem-sun .sunglassPhoto-l::before {
-        background: url("../../images/80Mobile.png") no-repeat;
+        background: url("../images/80Mobile.png") no-repeat;
         background-size: cover; } }
   .newItem-sun .sunglassPhoto-r {
     width: 100%;
@@ -723,14 +723,14 @@ a {
           right: 0;
           bottom: 0;
           opacity: 1;
-          background: url("../../images/15.png") no-repeat;
+          background: url("../images/15.png") no-repeat;
           background-size: cover; } }
     @media (max-width: 767px) {
       .newItem-sun .sunglassPhoto-r img {
         display: block;
         padding-bottom: 44%; }
       .newItem-sun .sunglassPhoto-r::before {
-        background: url("../../images/15Mobile.png") no-repeat;
+        background: url("../images/15Mobile.png") no-repeat;
         background-size: cover; } }
 
 .sunglassesItem {
