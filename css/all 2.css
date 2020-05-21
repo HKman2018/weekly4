@@ -420,7 +420,7 @@ a {
         padding-bottom: 8px; } }
 
 .productDiamond .bg-img {
-  background: url("../images/productDiamond.png") no-repeat;
+  background: url("../../images/productDiamond.png") no-repeat;
   background-size: cover;
   width: 10%;
   padding-bottom: 8%; }
