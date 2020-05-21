@@ -1,0 +1,956 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  color: #AA0601;
+  line-height: 1;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+@media (max-width: 767px) {
+  body {
+    margin: 0px; } }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+a {
+  display: block;
+  text-decoration: none; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container-fluid {
+  max-width: 1539px;
+  margin: 0 auto; }
+
+.d-block {
+  display: block; }
+
+.d-inline-b {
+  display: inline-block; }
+
+.bg-color {
+  background: #AA0601; }
+
+.bg-color-blush {
+  background: #AA06010D; }
+
+.t-color {
+  color: #650300; }
+
+.zh-text-med {
+  font-family: '蘋方-繁', Medium; }
+
+.zh-text-light {
+  font-family: '蘋方-繁', light; }
+
+.zh-text-Sem {
+  font-family: '蘋方-繁', Semibold; }
+
+.zh-text-regular {
+  font-family: '蘋方-繁', Regular; }
+
+.en-text-bold {
+  font-family: 'Roboto', bold; }
+
+.en-text-med {
+  font-family: 'Roboto', Medium; }
+
+.en-text-regular {
+  font-family: 'Roboto', Regular; }
+
+.mt-16 {
+  margin-top: 0.8rem; }
+
+.mt-30 {
+  margin-top: 1.5rem; }
+
+.mt-64 {
+  margin-top: 3.2rem; }
+
+.ml-8 {
+  margin-left: 0.4rem; }
+
+.ml-24 {
+  margin-left: 1.2rem; }
+
+.ml-48 {
+  margin-left: 2.4rem; }
+
+.ml-32 {
+  margin-left: 1.6rem; }
+
+.ml-62 {
+  margin-left: 3.39rem; }
+
+.ml-88 {
+  margin-left: 4.4rem; }
+
+.mr-88 {
+  margin-right: 4.4rem; }
+
+.mb-16 {
+  margin-bottom: 0.8rem; }
+
+.mb-24 {
+  margin-bottom: 1.2rem; }
+
+.mb-20 {
+  margin-bottom: 1rem; }
+
+.mb-30 {
+  margin-bottom: 1.5rem; }
+
+.mb-32 {
+  margin-bottom: 1.6rem; }
+
+.mb-40 {
+  margin-bottom: 2rem; }
+
+.mb-48 {
+  margin-bottom: 48px; }
+
+.mb-60 {
+  margin-bottom: 3rem; }
+
+.mb-80 {
+  margin-bottom: 4rem; }
+
+.mb-64 {
+  margin-bottom: 3.2rem; }
+
+.mb-88 {
+  margin-bottom: 88px; }
+
+.pt-64 {
+  padding-top: 3.2rem; }
+
+.pb-60 {
+  padding-bottom: 3rem; }
+
+.pb-80 {
+  padding-bottom: 4rem; }
+
+.pb-479 {
+  padding-bottom: 23.95rem; }
+
+.fs-16 {
+  font-size: 1rem;
+  line-height: 1.4; }
+
+.fs-19 {
+  font-size: 1.1875rem;
+  line-height: 1.4; }
+
+.fs-20 {
+  font-size: 1.25rem;
+  line-height: 1.4; }
+
+.fs-24 {
+  font-size: 1.5rem;
+  line-height: 1.5; }
+
+.fs-32 {
+  font-size: 2rem;
+  line-height: 1.43; }
+
+.fs-36 {
+  font-size: 2.25rem;
+  line-height: 1.45; }
+
+.fs-42 {
+  font-size: 2.625rem;
+  line-height: 1.40; }
+
+.fs-48 {
+  font-family: "蘋方-繁", Semibold;
+  font-size: 3rem;
+  line-height: 1.4; }
+
+.fs-64 {
+  font-size: 4rem;
+  line-height: 1.42; }
+
+.fs-72 {
+  font-size: 4.57rem;
+  line-height: 1.4; }
+
+.d-flex {
+  display: flex; }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+
+.header .menu {
+  display: none; }
+
+.logo a {
+  width: 80px;
+  height: 48.57px;
+  background: url("../images/logo-new_工作區域 1.png") no-repeat;
+  color: #FFFFFF;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.global-nav {
+  display: flex; }
+
+.global-nav li a {
+  text-decoration: none;
+  display: block;
+  margin: 40px 0;
+  margin-left: 64px;
+  color: #FFFFFF; }
+
+/* --------------------  header RWD------------ */
+@media (max-width: 992px) {
+  .header h1 {
+    margin-left: 48px; }
+  .header .global-nav {
+    margin-right: 48px; }
+  .header .global-nav a {
+    margin-left: 40px; } }
+
+@media (max-width: 767px) {
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: center; }
+  .header .menu {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/menu.svg");
+    display: block; }
+  .header .logo {
+    margin: 0px;
+    padding: 10px; }
+  .header .global-nav {
+    display: none;
+    background: #AA0601;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    max-height: 240px;
+    text-align: center; }
+  .header .global-nav a {
+    margin: 0px;
+    padding: 15px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff; }
+  .header h1 a {
+    text-align: center;
+    width: 48px;
+    height: 29px;
+    background: url("../images/logo.png") no-repeat; }
+  .header .menu:active .header .global-nav {
+    display: block; } }
+
+.local-nav .product-nav {
+  width: 33.33%; }
+
+.local-nav .product-nav:nth-child(3) {
+  border-right: 1px solid #DCDCDC; }
+
+.product-nav {
+  text-align: center;
+  border-left: 1px solid #DCDCDC; }
+  .product-nav .bg-img {
+    display: inline-block; }
+  .product-nav h3 {
+    color: #000000;
+    text-transform: uppercase; }
+  .product-nav span {
+    margin-left: 8px; }
+    @media (max-width: 992px) {
+      .product-nav span {
+        font-size: 1.75rem;
+        line-height: 1.35; } }
+    @media (max-width: 767px) {
+      .product-nav span {
+        font-size: 0.875rem;
+        line-height: 1.35; } }
+  .product-nav a {
+    padding-top: 24px;
+    padding-bottom: 24px; }
+    @media (max-width: 992px) {
+      .product-nav a {
+        padding-top: 16px;
+        padding-bottom: 16px; } }
+    @media (max-width: 767px) {
+      .product-nav a {
+        padding-top: 8px;
+        padding-bottom: 8px; } }
+
+.productDiamond .bg-img {
+  background: url("../images/productDiamond.png") no-repeat;
+  background-size: cover;
+  width: 10%;
+  padding-bottom: 8%; }
+  @media (max-width: 992px) {
+    .productDiamond .bg-img {
+      background: url("../images/diamondPad.png") no-repeat;
+      background-size: cover;
+      width: 12.4%;
+      padding-bottom: 11.5%; } }
+  @media (max-width: 767px) {
+    .productDiamond .bg-img {
+      background: url("../images/diamondMobile.svg") no-repeat;
+      width: 14%;
+      padding-bottom: 11.5%; } }
+
+.productSun .bg-img {
+  background: url("../images/productSun.png") no-repeat;
+  background-size: cover;
+  width: 9%;
+  padding-bottom: 9%; }
+  @media (max-width: 992px) {
+    .productSun .bg-img {
+      background: url("../images/sunPad_1.png") no-repeat;
+      background-size: cover;
+      width: 12%;
+      padding-bottom: 11.5%; } }
+  @media (max-width: 767px) {
+    .productSun .bg-img {
+      background: url("../images/sunMobile.svg") no-repeat;
+      width: 12%;
+      padding-bottom: 11.5%; } }
+
+.productFlash .bg-img {
+  background: url("../images/productFlash.png") no-repeat;
+  background-size: cover;
+  width: 8%;
+  padding-bottom: 9.5%; }
+  @media (max-width: 992px) {
+    .productFlash .bg-img {
+      background: url("../images/flashPad.png") no-repeat;
+      background-size: cover;
+      width: 9%;
+      padding-bottom: 11.5%; } }
+  @media (max-width: 767px) {
+    .productFlash .bg-img {
+      background: url("../images/flashMobile.svg") no-repeat;
+      width: 9%;
+      padding-bottom: 11.5%; } }
+
+.product-nav .current {
+  padding-bottom: 8px;
+  border-bottom: 16px solid #AA0601; }
+  @media (max-width: 992px) {
+    .product-nav .current {
+      padding-bottom: 8px;
+      border-bottom: 8px solid #AA0601; } }
+  @media (max-width: 767px) {
+    .product-nav .current {
+      padding-bottom: 8px;
+      border-bottom: 8px solid #AA0601; } }
+
+.disabled {
+  pointer-events: none;
+  cursor: default; }
+
+.newItem {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 992px) {
+    .newItem {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .newItem {
+      margin-bottom: 24px; } }
+  .newItem .optiPhoto-l {
+    width: 100%;
+    margin-right: 12px; }
+    @media (max-width: 992px) {
+      .newItem .optiPhoto-l {
+        margin: 0;
+        position: relative; }
+        .newItem .optiPhoto-l img {
+          padding-bottom: 47%; }
+        .newItem .optiPhoto-l::before {
+          content: '';
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background: url("../images/2.png") no-repeat;
+          background-size: cover; } }
+    @media (max-width: 767px) {
+      .newItem .optiPhoto-l img {
+        display: block;
+        padding-bottom: 44%; }
+      .newItem .optiPhoto-l::before {
+        background: url("../images/2Mobile.png") no-repeat;
+        background-size: cover; } }
+  .newItem .optiPhoto-r {
+    width: 100%;
+    margin-left: 12px; }
+    @media (max-width: 992px) {
+      .newItem .optiPhoto-r {
+        margin: 0;
+        position: relative; }
+        .newItem .optiPhoto-r img {
+          padding-bottom: 47%; }
+        .newItem .optiPhoto-r::before {
+          content: '';
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background: url("../images/11.png") no-repeat;
+          background-size: cover; } }
+    @media (max-width: 767px) {
+      .newItem .optiPhoto-r img {
+        display: block;
+        padding-bottom: 44%; }
+      .newItem .optiPhoto-r::before {
+        background: url("../images/11Mobile.png") no-repeat;
+        background-size: cover; } }
+
+.styleName {
+  text-align: center;
+  color: #000; }
+  @media (max-width: 992px) {
+    .styleName {
+      margin-bottom: 32px; }
+      .styleName h2 {
+        font-size: 2rem;
+        line-height: 1.35; }
+      .styleName p {
+        font-size: 1.6rem;
+        line-height: 1.3; } }
+  @media (max-width: 767px) {
+    .styleName {
+      margin-bottom: 20px; }
+      .styleName h2 {
+        font-size: 1.25rem;
+        line-height: 1.3; }
+      .styleName p {
+        font-size: 1rem;
+        line-height: 1.4; } }
+
+.opticalItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .opticalItem li {
+    margin-bottom: 104px; }
+    @media (max-width: 992px) {
+      .opticalItem li {
+        margin-bottom: 72px; } }
+    @media (max-width: 767px) {
+      .opticalItem li {
+        margin-bottom: 32px; } }
+  @media (max-width: 992px) {
+    .opticalItem {
+      max-width: 672px;
+      margin: 0 auto; }
+      .opticalItem li {
+        width: 48.21%; }
+        .opticalItem li:nth-child(1n+11) {
+          display: none; } }
+  @media (max-width: 767px) {
+    .opticalItem {
+      max-width: 352px; }
+      .opticalItem li {
+        width: 100%; }
+        .opticalItem li:nth-child(1n+4) {
+          display: none; } }
+
+.product-price {
+  display: flex;
+  justify-content: space-between; }
+  .product-price p {
+    text-transform: uppercase;
+    line-height: 1.35; }
+    @media (max-width: 767px) {
+      .product-price p {
+        font-size: 1rem; } }
+  .product-price p:nth-child(1) {
+    color: #000000; }
+
+.product-color1 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #5F3E2D;
+  border-radius: 4px; }
+  @media (max-width: 767px) {
+    .product-color1 {
+      width: 17px;
+      height: 16px; } }
+
+.product-color2 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #B75929;
+  border-radius: 4px; }
+  @media (max-width: 767px) {
+    .product-color2 {
+      width: 17px;
+      height: 16px; } }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 156px;
+  margin-top: -16px; }
+  @media (max-width: 992px) {
+    .pagination {
+      margin-top: -19px;
+      margin-bottom: 104px; } }
+  @media (max-width: 767px) {
+    .pagination {
+      margin-top: 8px;
+      margin-bottom: 56px; } }
+  .pagination a {
+    color: #555555; }
+  .pagination .active {
+    background: #000; }
+  .pagination .active a {
+    color: #fff; }
+
+.page-link a {
+  padding: 10px 15px 12px 10px;
+  border: 1px solid #555555; }
+  @media (max-width: 767px) {
+    .page-link a {
+      font-size: 0.75rem;
+      line-height: 1.25;
+      padding: 8px 10px 8px 10px; } }
+
+.page-link:nth-child(1) a {
+  border-right: 0; }
+
+.page-item a {
+  padding: 10px 16px 12px 15px;
+  border: 1px solid #555555;
+  border-right: 0; }
+  @media (max-width: 767px) {
+    .page-item a {
+      font-size: 0.75rem;
+      line-height: 1.25;
+      padding: 8px 10px 8px 10px; } }
+
+.newItem-sun {
+  margin-bottom: 40px; }
+  .newItem-sun .sunglassPhoto-l {
+    width: 100%;
+    margin-right: 12px; }
+    @media (max-width: 992px) {
+      .newItem-sun .sunglassPhoto-l {
+        margin: 0;
+        position: relative; }
+        .newItem-sun .sunglassPhoto-l img {
+          padding-bottom: 47%; }
+        .newItem-sun .sunglassPhoto-l::before {
+          content: '';
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background: url("../images/80.png") no-repeat;
+          background-size: cover; } }
+    @media (max-width: 767px) {
+      .newItem-sun .sunglassPhoto-l img {
+        padding-bottom: 44%; }
+      .newItem-sun .sunglassPhoto-l::before {
+        background: url("../images/80Mobile.png") no-repeat;
+        background-size: cover; } }
+  .newItem-sun .sunglassPhoto-r {
+    width: 100%;
+    margin-left: 12px; }
+    @media (max-width: 992px) {
+      .newItem-sun .sunglassPhoto-r {
+        margin: 0;
+        position: relative; }
+        .newItem-sun .sunglassPhoto-r img {
+          padding-bottom: 47%; }
+        .newItem-sun .sunglassPhoto-r::before {
+          content: '';
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background: url("../images/15.png") no-repeat;
+          background-size: cover; } }
+    @media (max-width: 767px) {
+      .newItem-sun .sunglassPhoto-r img {
+        display: block;
+        padding-bottom: 44%; }
+      .newItem-sun .sunglassPhoto-r::before {
+        background: url("../images/15Mobile.png") no-repeat;
+        background-size: cover; } }
+
+.sunglassesItem {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 52px; }
+  .sunglassesItem li {
+    width: 32%;
+    margin-bottom: 104px; }
+    .sunglassesItem li:nth-child(1n+7) {
+      display: none; }
+      @media (max-width: 992px) {
+        .sunglassesItem li:nth-child(1n+7) {
+          display: block; } }
+  @media (max-width: 992px) {
+    .sunglassesItem {
+      max-width: 672px;
+      margin: 0 auto; }
+      .sunglassesItem li {
+        width: 48.21%;
+        margin-bottom: 72px; } }
+  @media (max-width: 767px) {
+    .sunglassesItem {
+      max-width: 352px; }
+      .sunglassesItem li {
+        width: 100%;
+        margin-bottom: 32px; }
+        .sunglassesItem li:nth-child(1n+4) {
+          display: none; } }
+
+.sunglass-price {
+  text-transform: uppercase; }
+  .sunglass-price p {
+    line-height: 1.35; }
+    @media (max-width: 767px) {
+      .sunglass-price p {
+        font-size: 1rem; } }
+  .sunglass-price p:nth-child(1) {
+    color: #000; }
+  @media (max-width: 767px) {
+    .sunglass-price {
+      display: flex;
+      justify-content: space-between; } }
+
+.sun-pageNav {
+  display: none; }
+  @media (max-width: 992px) {
+    .sun-pageNav {
+      display: block; }
+      .sun-pageNav .sun-pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: -19px;
+        margin-bottom: 104px; }
+      .sun-pageNav a {
+        color: #555555; }
+      .sun-pageNav .active {
+        background: #000; }
+      .sun-pageNav .active a {
+        color: #fff; } }
+  @media (max-width: 767px) {
+    .sun-pageNav .sun-pagination {
+      margin-top: 8px;
+      margin-bottom: 56px; } }
+
+/* ----------------footer----------- */
+.footer .footerNav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  margin-bottom: 18px; }
+
+.footerNav ul {
+  display: flex;
+  align-items: center; }
+
+.footerInner a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block; }
+
+.footerLinks .lineIcon {
+  background: url("../images/ic_social_line.svg") no-repeat;
+  width: 48px;
+  height: 48px; }
+
+.footerLinks .instagramIcon {
+  background: url("../images/ic_social_ig.svg") no-repeat;
+  width: 48px;
+  height: 48px; }
+
+.footerLinks .facebookIcon {
+  background: url("../images/ic_social_fb.svg") no-repeat;
+  width: 48px;
+  height: 48px; }
+
+.footerContact img {
+  display: inline;
+  max-width: 36px;
+  margin-right: 23px; }
+
+.footerContact a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 1.35; }
+
+.footerContact li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.footerLogo {
+  border-top: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 28px; }
+
+.footerLogo li {
+  padding-top: 24px; }
+
+.f-logo,
+.logo-inner {
+  display: flex;
+  align-items: center; }
+
+.footerLogo h2 {
+  background: url("../images/logo-new_工作區域 1.png") no-repeat;
+  width: 80px;
+  height: 48.57px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 38px; }
+
+.footerLogo p {
+  color: #ffffff; }
+
+.logo-inner a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.7rem;
+  line-height: 1.45; }
+
+@media (max-width: 992px) {
+  .footer .container {
+    max-width: 672px; }
+  .footer .footerNav {
+    padding-top: 40px; }
+  .footerLinks .facebookIcon {
+    background: url("../images/ic_social_fb copy.svg") no-repeat;
+    width: 24px;
+    height: 24px; }
+  .footerLinks .instagramIcon {
+    background: url("../images/ic_social_ig copy.svg") no-repeat;
+    width: 24px;
+    height: 24px; }
+  .footerLinks .lineIcon {
+    background: url("../images/ic_social_line copy.svg") no-repeat;
+    width: 24px;
+    height: 24px; }
+  .footerContact img {
+    max-width: 23px; }
+  .footerContact a {
+    font-size: 1.25rem; }
+  .footerLogo .f-logo h2 {
+    display: none; }
+  .logo-inner .ml-62 {
+    margin-left: 24px; } }
+
+@media (max-width: 767px) {
+  .footer .container {
+    max-width: 352px;
+    position: relative; }
+  .footer .footerContact {
+    position: absolute;
+    top: 24px;
+    left: 0px; }
+  .footer .footerNav {
+    padding-bottom: 51px;
+    margin-bottom: 14px; }
+  .footer .footerInner {
+    display: none; }
+  .footerNav .footerLinks {
+    position: absolute;
+    top: 24px;
+    right: 0px; }
+  .footerLinks .ml-32 {
+    margin-left: 24px; }
+  .footerContact img {
+    max-width: 13px;
+    margin-right: 8px; }
+  .footerContact .footerEmail {
+    margin-bottom: 0px; }
+  .footerContact a {
+    font-size: 1rem; }
+  .footerLogo {
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 24px; }
+    .footerLogo .f-logo {
+      padding-top: 16px; }
+    .footerLogo .f-logo h2 {
+      position: absolute;
+      display: block;
+      background: url("../images/logo-footerIphone.png") no-repeat;
+      right: 0;
+      bottom: 20px;
+      margin-right: 0px;
+      width: 46px;
+      height: 28px; }
+    .footerLogo .f-logo p {
+      font-size: 0.875rem;
+      line-height: 1.4; }
+    .footerLogo .logo-inner {
+      padding-top: 8px;
+      flex-direction: column;
+      align-items: flex-start; }
+  .logo-inner a:nth-last-child(1) {
+    margin: 0;
+    margin-top: 8px; } }
+
+/*# sourceMappingURL=all.css.map */
