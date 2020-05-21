@@ -1,1 +1,0 @@
-{"version":3,"sources":["all.js"],"names":["$","document","ready","css"],"mappings":";;AAAAA,CAAC,CAACC,QAAD,CAAD,CAAYC,KAAZ,CAAkB,YAAW;AACzBF,EAAAA,CAAC,CAAC,IAAD,CAAD,CAAQG,GAAR,CAAY,OAAZ,EAAqB,KAArB;AACH,CAFD","file":"all.js","sourcesContent":["$(document).ready(function() {\n    $('h1').css('color', 'red')\n})"]}

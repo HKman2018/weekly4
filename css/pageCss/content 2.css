@@ -1,0 +1,415 @@
+.local-nav .product-nav {
+  width: 33.33%; }
+
+.local-nav .product-nav:nth-child(3) {
+  border-right: 1px solid #DCDCDC; }
+
+.product-nav {
+  text-align: center;
+  border-left: 1px solid #DCDCDC; }
+  .product-nav .bg-img {
+    display: inline-block; }
+  .product-nav h3 {
+    color: #000000;
+    text-transform: uppercase; }
+  .product-nav span {
+    margin-left: 8px; }
+    @media (max-width: 992px) {
+      .product-nav span {
+        font-size: 1.75rem;
+        line-height: 1.35; } }
+    @media (max-width: 767px) {
+      .product-nav span {
+        font-size: 0.875rem;
+        line-height: 1.35; } }
+  .product-nav a {
+    padding-top: 24px;
+    padding-bottom: 24px; }
+    @media (max-width: 992px) {
+      .product-nav a {
+        padding-top: 16px;
+        padding-bottom: 16px; } }
+    @media (max-width: 767px) {
+      .product-nav a {
+        padding-top: 8px;
+        padding-bottom: 8px; } }
+
+.productDiamond .bg-img {
+  background: url("../images/productDiamond.png") no-repeat;
+  background-size: cover;
+  width: 10%;
+  padding-bottom: 8%; }
+  @media (max-width: 992px) {
+    .productDiamond .bg-img {
+      background: url("../images/diamondPad.png") no-repeat;
+      background-size: cover;
+      width: 12.4%;
+      padding-bottom: 11.5%; } }
+  @media (max-width: 767px) {
+    .productDiamond .bg-img {
+      background: url("../images/diamondMobile.svg") no-repeat;
+      width: 14%;
+      padding-bottom: 11.5%; } }
+
+.productSun .bg-img {
+  background: url("../images/productSun.png") no-repeat;
+  background-size: cover;
+  width: 9%;
+  padding-bottom: 9%; }
+  @media (max-width: 992px) {
+    .productSun .bg-img {
+      background: url("../images/sunPad_1.png") no-repeat;
+      background-size: cover;
+      width: 12%;
+      padding-bottom: 11.5%; } }
+  @media (max-width: 767px) {
+    .productSun .bg-img {
+      background: url("../images/sunMobile.svg") no-repeat;
+      width: 12%;
+      padding-bottom: 11.5%; } }
+
+.productFlash .bg-img {
+  background: url("../images/productFlash.png") no-repeat;
+  background-size: cover;
+  width: 8%;
+  padding-bottom: 9.5%; }
+  @media (max-width: 992px) {
+    .productFlash .bg-img {
+      background: url("../images/flashPad.png") no-repeat;
+      background-size: cover;
+      width: 9%;
+      padding-bottom: 11.5%; } }
+  @media (max-width: 767px) {
+    .productFlash .bg-img {
+      background: url("../images/flashMobile.svg") no-repeat;
+      width: 9%;
+      padding-bottom: 11.5%; } }
+
+.product-nav .current {
+  padding-bottom: 8px;
+  border-bottom: 16px solid #AA0601; }
+  @media (max-width: 992px) {
+    .product-nav .current {
+      padding-bottom: 8px;
+      border-bottom: 8px solid #AA0601; } }
+  @media (max-width: 767px) {
+    .product-nav .current {
+      padding-bottom: 8px;
+      border-bottom: 8px solid #AA0601; } }
+
+.disabled {
+  pointer-events: none;
+  cursor: default; }
+
+.newItem {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 992px) {
+    .newItem {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .newItem {
+      margin-bottom: 24px; } }
+  .newItem .optiPhoto-l {
+    width: 100%;
+    margin-right: 12px; }
+    @media (max-width: 992px) {
+      .newItem .optiPhoto-l {
+        margin: 0;
+        position: relative; }
+        .newItem .optiPhoto-l img {
+          padding-bottom: 47%; }
+        .newItem .optiPhoto-l::before {
+          content: '';
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background: url("../images/2.png") no-repeat;
+          background-size: cover; } }
+    @media (max-width: 767px) {
+      .newItem .optiPhoto-l img {
+        display: block;
+        padding-bottom: 44%; }
+      .newItem .optiPhoto-l::before {
+        background: url("../images/2Mobile.png") no-repeat;
+        background-size: cover; } }
+  .newItem .optiPhoto-r {
+    width: 100%;
+    margin-left: 12px; }
+    @media (max-width: 992px) {
+      .newItem .optiPhoto-r {
+        margin: 0;
+        position: relative; }
+        .newItem .optiPhoto-r img {
+          padding-bottom: 47%; }
+        .newItem .optiPhoto-r::before {
+          content: '';
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background: url("../images/11.png") no-repeat;
+          background-size: cover; } }
+    @media (max-width: 767px) {
+      .newItem .optiPhoto-r img {
+        display: block;
+        padding-bottom: 44%; }
+      .newItem .optiPhoto-r::before {
+        background: url("../images/11Mobile.png") no-repeat;
+        background-size: cover; } }
+
+.styleName {
+  text-align: center;
+  color: #000; }
+  @media (max-width: 992px) {
+    .styleName {
+      margin-bottom: 32px; }
+      .styleName h2 {
+        font-size: 2rem;
+        line-height: 1.35; }
+      .styleName p {
+        font-size: 1.6rem;
+        line-height: 1.3; } }
+  @media (max-width: 767px) {
+    .styleName {
+      margin-bottom: 20px; }
+      .styleName h2 {
+        font-size: 1.25rem;
+        line-height: 1.3; }
+      .styleName p {
+        font-size: 1rem;
+        line-height: 1.4; } }
+
+.opticalItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .opticalItem li {
+    margin-bottom: 104px; }
+    @media (max-width: 992px) {
+      .opticalItem li {
+        margin-bottom: 72px; } }
+    @media (max-width: 767px) {
+      .opticalItem li {
+        margin-bottom: 32px; } }
+  @media (max-width: 992px) {
+    .opticalItem {
+      max-width: 672px;
+      margin: 0 auto; }
+      .opticalItem li {
+        width: 48.21%; }
+        .opticalItem li:nth-child(1n+11) {
+          display: none; } }
+  @media (max-width: 767px) {
+    .opticalItem {
+      max-width: 352px; }
+      .opticalItem li {
+        width: 100%; }
+        .opticalItem li:nth-child(1n+4) {
+          display: none; } }
+
+.product-price {
+  display: flex;
+  justify-content: space-between; }
+  .product-price p {
+    text-transform: uppercase;
+    line-height: 1.35; }
+    @media (max-width: 767px) {
+      .product-price p {
+        font-size: 1rem; } }
+  .product-price p:nth-child(1) {
+    color: #000000; }
+
+.product-color1 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #5F3E2D;
+  border-radius: 4px; }
+  @media (max-width: 767px) {
+    .product-color1 {
+      width: 17px;
+      height: 16px; } }
+
+.product-color2 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #B75929;
+  border-radius: 4px; }
+  @media (max-width: 767px) {
+    .product-color2 {
+      width: 17px;
+      height: 16px; } }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 156px;
+  margin-top: -16px; }
+  @media (max-width: 992px) {
+    .pagination {
+      margin-top: -19px;
+      margin-bottom: 104px; } }
+  @media (max-width: 767px) {
+    .pagination {
+      margin-top: 8px;
+      margin-bottom: 56px; } }
+  .pagination a {
+    color: #555555; }
+  .pagination .active {
+    background: #000; }
+  .pagination .active a {
+    color: #fff; }
+
+.page-link a {
+  padding: 10px 15px 12px 10px;
+  border: 1px solid #555555; }
+  @media (max-width: 767px) {
+    .page-link a {
+      font-size: 0.75rem;
+      line-height: 1.25;
+      padding: 8px 10px 8px 10px; } }
+
+.page-link:nth-child(1) a {
+  border-right: 0; }
+
+.page-item a {
+  padding: 10px 16px 12px 15px;
+  border: 1px solid #555555;
+  border-right: 0; }
+  @media (max-width: 767px) {
+    .page-item a {
+      font-size: 0.75rem;
+      line-height: 1.25;
+      padding: 8px 10px 8px 10px; } }
+
+.newItem-sun {
+  margin-bottom: 40px; }
+  .newItem-sun .sunglassPhoto-l {
+    width: 100%;
+    margin-right: 12px; }
+    @media (max-width: 992px) {
+      .newItem-sun .sunglassPhoto-l {
+        margin: 0;
+        position: relative; }
+        .newItem-sun .sunglassPhoto-l img {
+          padding-bottom: 47%; }
+        .newItem-sun .sunglassPhoto-l::before {
+          content: '';
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background: url("../images/80.png") no-repeat;
+          background-size: cover; } }
+    @media (max-width: 767px) {
+      .newItem-sun .sunglassPhoto-l img {
+        padding-bottom: 44%; }
+      .newItem-sun .sunglassPhoto-l::before {
+        background: url("../images/80Mobile.png") no-repeat;
+        background-size: cover; } }
+  .newItem-sun .sunglassPhoto-r {
+    width: 100%;
+    margin-left: 12px; }
+    @media (max-width: 992px) {
+      .newItem-sun .sunglassPhoto-r {
+        margin: 0;
+        position: relative; }
+        .newItem-sun .sunglassPhoto-r img {
+          padding-bottom: 47%; }
+        .newItem-sun .sunglassPhoto-r::before {
+          content: '';
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background: url("../images/15.png") no-repeat;
+          background-size: cover; } }
+    @media (max-width: 767px) {
+      .newItem-sun .sunglassPhoto-r img {
+        display: block;
+        padding-bottom: 44%; }
+      .newItem-sun .sunglassPhoto-r::before {
+        background: url("../images/15Mobile.png") no-repeat;
+        background-size: cover; } }
+
+.sunglassesItem {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 52px; }
+  .sunglassesItem li {
+    width: 32%;
+    margin-bottom: 104px; }
+    .sunglassesItem li:nth-child(1n+7) {
+      display: none; }
+      @media (max-width: 992px) {
+        .sunglassesItem li:nth-child(1n+7) {
+          display: block; } }
+  @media (max-width: 992px) {
+    .sunglassesItem {
+      max-width: 672px;
+      margin: 0 auto; }
+      .sunglassesItem li {
+        width: 48.21%;
+        margin-bottom: 72px; } }
+  @media (max-width: 767px) {
+    .sunglassesItem {
+      max-width: 352px; }
+      .sunglassesItem li {
+        width: 100%;
+        margin-bottom: 32px; }
+        .sunglassesItem li:nth-child(1n+4) {
+          display: none; } }
+
+.sunglass-price {
+  text-transform: uppercase; }
+  .sunglass-price p {
+    line-height: 1.35; }
+    @media (max-width: 767px) {
+      .sunglass-price p {
+        font-size: 1rem; } }
+  .sunglass-price p:nth-child(1) {
+    color: #000; }
+  @media (max-width: 767px) {
+    .sunglass-price {
+      display: flex;
+      justify-content: space-between; } }
+
+.sun-pageNav {
+  display: none; }
+  @media (max-width: 992px) {
+    .sun-pageNav {
+      display: block; }
+      .sun-pageNav .sun-pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: -19px;
+        margin-bottom: 104px; }
+      .sun-pageNav a {
+        color: #555555; }
+      .sun-pageNav .active {
+        background: #000; }
+      .sun-pageNav .active a {
+        color: #fff; } }
+  @media (max-width: 767px) {
+    .sun-pageNav .sun-pagination {
+      margin-top: 8px;
+      margin-bottom: 56px; } }
+
+/*# sourceMappingURL=content.css.map */

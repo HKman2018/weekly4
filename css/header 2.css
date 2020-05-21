@@ -1,0 +1,78 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  justify-content: space-between; }
+
+.header .menu {
+  display: none; }
+
+.logo a {
+  width: 80px;
+  height: 48.57px;
+  background: url("../images/logo-new_工作區域 1.png") no-repeat;
+  color: #FFFFFF;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.global-nav {
+  display: flex; }
+
+.global-nav li a {
+  text-decoration: none;
+  display: block;
+  margin: 40px 0;
+  margin-left: 64px;
+  color: #FFFFFF; }
+
+/* --------------------  header RWD------------ */
+@media (max-width: 992px) {
+  .header h1 {
+    margin-left: 48px; }
+  .header .global-nav {
+    margin-right: 48px; }
+  .header .global-nav a {
+    margin-left: 40px; } }
+
+@media (max-width: 767px) {
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: center; }
+  .header .menu {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/menu.svg");
+    display: block; }
+  .header .logo {
+    margin: 0px;
+    padding: 10px; }
+  .header .global-nav {
+    display: none;
+    background: #AA0601;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    max-height: 240px;
+    text-align: center; }
+  .header .global-nav a {
+    margin: 0px;
+    padding: 15px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff; }
+  .header h1 a {
+    text-align: center;
+    width: 48px;
+    height: 29px;
+    background: url("../images/logo.png") no-repeat; }
+  .header .menu:active .header .global-nav {
+    display: block; } }
+
+/*# sourceMappingURL=header.css.map */
