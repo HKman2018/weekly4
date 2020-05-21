@@ -59,7 +59,13 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./public/css'))
         .pipe(browserSync.stream());
 });
-
+gulp.task('jquery', function() {
+    return gulp.src('bower_components/jquery/dist/jquery.min.js')
+        .pipe($.uglify())
+        .pipe($.sourcemaps.write('.'))
+        .pipe(gulp.dest('./public/js'))
+        .pipe(browserSync.stream());
+})
 gulp.task('babel', function() {
     return gulp.src('./source/js/**/*.js')
         .pipe($.sourcemaps.init())
@@ -97,6 +103,7 @@ gulp.task('imagesMin', function() {
     return gulp.src('./source/images/*')
         .pipe($.if(envOptions.env === 'production', $.imagemin()))
         .pipe(gulp.dest('./public/images'))
+        .pipe(browserSync.stream());
 })
 
 gulp.task('bower', function() {
@@ -124,16 +131,19 @@ gulp.task('vendorJs', function() {
         .pipe(gulp.dest('./public/javascripts'))
 })
 
+gulp.task('deploy', function() {
+    return gulp.src('./public/**/*')
+        .pipe($.ghPages())
+})
 
+gulp.task('build', gulp.series('clean', 'pug', 'babel', 'sass', 'bower', 'vendorJs', 'imagesMin', 'jquery'))
 
-gulp.task('build', gulp.series('clean', 'pug', 'babel', 'sass', 'bower', 'vendorJs', 'imagesMin'))
-
-gulp.task('default', gulp.series('bower', 'vendorJs', gulp.parallel('pug', 'sass', 'babel', 'imagesMin'),
+gulp.task('default', gulp.series('bower', 'vendorJs', gulp.parallel('pug', 'sass', 'babel', 'imagesMin', 'jquery'),
     function(done) {
         browserSync.init({
             server: {
                 baseDir: "public/",
-                index: "layout.html",
+                index: "pageLayout/index.html",
                 page: "page.html"
             },
             // startPath: "/html",

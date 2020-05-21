@@ -1,4 +1,9 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./reset/cssReset";
+@import "./globalCss/globalCss";
+@import "header";
+@import "./pageCss/content.scss";
+@import "footer";
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "./helpers/variables";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/bootstrap";

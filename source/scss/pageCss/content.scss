@@ -1,0 +1,508 @@
+        @import "../globalCss/viewPoint";
+        @mixin bg-photo {
+            content: '';
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 1;
+        }
+        
+        ;
+        @mixin pad-h2-text {
+            h2 {
+                font-size: 2rem;
+                line-height: 1.35;
+            }
+            p {
+                font-size: 1.6rem;
+                line-height: 1.3;
+            }
+        }
+        
+        @mixin mobile-h2-text {
+            margin-bottom: 20px;
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.3;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.4;
+            }
+        }
+        
+        ;
+        // ---------------local-nav-------------
+        .local-nav {
+            .product-nav {
+                width: 33.33%;
+            }
+        }
+        
+        .local-nav {
+            .product-nav:nth-child(3) {
+                border-right: 1px solid #DCDCDC;
+            }
+        }
+        
+        // -------------product-nav---------------
+        .product-nav {
+            text-align: center;
+            border-left: 1px solid #DCDCDC;
+            .bg-img {
+                display: inline-block;
+            }
+            h3 {
+                color: #000000;
+                text-transform: uppercase;
+            }
+            span {
+                margin-left: 8px;
+                @include pad {
+                    font-size: 1.75rem;
+                    line-height: 1.35;
+                }
+                @include mobile {
+                    font-size: 0.875rem;
+                    line-height: 1.35;
+                }
+            }
+            a {
+                padding-top: 24px;
+                padding-bottom: 24px;
+                @include pad {
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+                @include mobile {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+            }
+        }
+        
+        .productDiamond {
+            .bg-img {
+                background: url("../../images/productDiamond.png")no-repeat;
+                background-size: cover;
+                width: 10%;
+                padding-bottom: 8%;
+                @include pad {
+                    background: url("../../images/diamondPad.png")no-repeat;
+                    background-size: cover;
+                    width: 12.4%;
+                    padding-bottom: 11.5%;
+                }
+                @include mobile {
+                    background: url("../../images/diamondMobile.svg")no-repeat;
+                    width: 14%;
+                    padding-bottom: 11.5%;
+                }
+            }
+        }
+        
+        .productSun {
+            .bg-img {
+                background: url("../../images/productSun.png")no-repeat;
+                background-size: cover;
+                width: 9%;
+                padding-bottom: 9%;
+                @include pad {
+                    background: url("../../images/sunPad_1.png")no-repeat;
+                    background-size: cover;
+                    width: 12%;
+                    padding-bottom: 11.5%;
+                }
+                @include mobile {
+                    background: url("../../images/sunMobile.svg")no-repeat;
+                    width: 12%;
+                    padding-bottom: 11.5%;
+                }
+            }
+        }
+        
+        .productFlash {
+            .bg-img {
+                background: url("../../images/productFlash.png")no-repeat;
+                background-size: cover;
+                width: 8%;
+                padding-bottom: 9.5%;
+                @include pad {
+                    background: url("../../images/flashPad.png")no-repeat;
+                    background-size: cover;
+                    width: 9%;
+                    padding-bottom: 11.5%;
+                }
+                @include mobile {
+                    background: url("../../images/flashMobile.svg")no-repeat;
+                    width: 9%;
+                    padding-bottom: 11.5%;
+                }
+            }
+        }
+        
+        .product-nav .current {
+            padding-bottom: 8px;
+            border-bottom: 16px solid #AA0601;
+            @include pad {
+                padding-bottom: 8px;
+                border-bottom: 8px solid #AA0601;
+            }
+            @include mobile {
+                padding-bottom: 8px;
+                border-bottom: 8px solid #AA0601;
+            }
+        }
+        
+        .disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+        
+        // ------------opticalStyle---------------
+        .newItem {
+            display: flex;
+            justify-content: space-between;
+            @include pad {
+                margin-bottom: 40px;
+            }
+            @include mobile {
+                margin-bottom: 24px;
+            }
+            .optiPhoto-l {
+                width: 100%;
+                margin-right: 12px;
+                @include pad {
+                    margin: 0;
+                    img {
+                        padding-bottom: 47%;
+                    }
+                    position: relative;
+                    &::before {
+                        @include bg-photo;
+                        background: url("../../images/2.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+                @include mobile {
+                    img {
+                        display: block;
+                        padding-bottom: 44%;
+                    }
+                    &::before {
+                        background: url("../../images/2Mobile.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+            .optiPhoto-r {
+                width: 100%;
+                margin-left: 12px;
+                @include pad {
+                    margin: 0;
+                    img {
+                        padding-bottom: 47%;
+                    }
+                    position: relative;
+                    &::before {
+                        @include bg-photo;
+                        background: url("../../images/11.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+                @include mobile {
+                    img {
+                        display: block;
+                        padding-bottom: 44%;
+                    }
+                    &::before {
+                        background: url("../../images/11Mobile.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        
+        // -----------------標題 h2 ------------
+        .styleName {
+            text-align: center;
+            color: #000;
+            @include pad {
+                margin-bottom: 32px;
+                @include pad-h2-text;
+            }
+            @include mobile {
+                @include mobile-h2-text;
+            }
+        }
+        
+        // ------------------optical Item------------
+        .opticalItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li {
+                margin-bottom: 104px;
+                @include pad {
+                    margin-bottom: 72px;
+                }
+                @include mobile {
+                    margin-bottom: 32px;
+                }
+            }
+            @include pad {
+                max-width: 672px;
+                margin: 0 auto;
+                li {
+                    width: 48.21%;
+                    &:nth-child(1n+11) {
+                        display: none;
+                    }
+                }
+            }
+            @include mobile {
+                max-width: 352px;
+                li {
+                    width: 100%;
+                    &:nth-child(1n+4) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        .product-price {
+            display: flex;
+            justify-content: space-between;
+            p {
+                text-transform: uppercase;
+                line-height: 1.35;
+                @include mobile {
+                    font-size: 1rem;
+                }
+            }
+            p:nth-child(1) {
+                color: #000000;
+            }
+        }
+        
+        .product-color1 {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: #5F3E2D;
+            border-radius: 4px;
+            @include mobile {
+                width: 17px;
+                height: 16px;
+            }
+        }
+        
+        .product-color2 {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: #B75929;
+            border-radius: 4px;
+            @include mobile {
+                width: 17px;
+                height: 16px;
+            }
+        }
+        
+        // --------------page nav ---------------
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 156px;
+            margin-top: -16px;
+            @include pad {
+                margin-top: -19px;
+                margin-bottom: 104px;
+            }
+            @include mobile {
+                margin-top: 8px;
+                margin-bottom: 56px;
+            }
+            a {
+                color: #555555;
+            }
+            .active {
+                background: #000;
+            }
+            .active a {
+                color: #fff;
+            }
+        }
+        
+        .page-link {
+            a {
+                padding: 10px 15px 12px 10px;
+                border: 1px solid #555555;
+                @include mobile {
+                    font-size: 0.75rem;
+                    line-height: 1.25;
+                    padding: 8px 10px 8px 10px;
+                }
+            }
+        }
+        
+        .page-link:nth-child(1) {
+            a {
+                border-right: 0;
+            }
+        }
+        
+        .page-item {
+            a {
+                padding: 10px 16px 12px 15px;
+                border: 1px solid #555555;
+                border-right: 0;
+                @include mobile {
+                    font-size: 0.75rem;
+                    line-height: 1.25;
+                    padding: 8px 10px 8px 10px;
+                }
+            }
+        }
+        
+        // --------------Sun Glass Photo-----------------
+        .newItem-sun {
+            margin-bottom: 40px;
+            .sunglassPhoto-l {
+                width: 100%;
+                margin-right: 12px;
+                @include pad {
+                    margin: 0;
+                    img {
+                        padding-bottom: 47%;
+                    }
+                    position: relative;
+                    &::before {
+                        @include bg-photo;
+                        background: url("../../images/80.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+                @include mobile {
+                    img {
+                        padding-bottom: 44%;
+                    }
+                    &::before {
+                        background: url("../../images/80Mobile.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+            .sunglassPhoto-r {
+                width: 100%;
+                margin-left: 12px;
+                @include pad {
+                    margin: 0;
+                    img {
+                        padding-bottom: 47%;
+                    }
+                    position: relative;
+                    &::before {
+                        @include bg-photo;
+                        background: url("../../images/15.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+                @include mobile {
+                    img {
+                        display: block;
+                        padding-bottom: 44%;
+                    }
+                    &::before {
+                        background: url("../../images/15Mobile.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        
+        // --------------sunglassesItem-----------
+        .sunglassesItem {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 52px;
+            li {
+                width: 32%;
+                margin-bottom: 104px;
+                &:nth-child(1n+7) {
+                    display: none;
+                    @include pad {
+                        display: block;
+                    }
+                }
+            }
+            @include pad {
+                max-width: 672px;
+                margin: 0 auto;
+                li {
+                    width: 48.21%;
+                    margin-bottom: 72px;
+                }
+            }
+            @include mobile {
+                max-width: 352px;
+                li {
+                    width: 100%;
+                    margin-bottom: 32px;
+                    &:nth-child(1n+4) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        .sunglass-price {
+            text-transform: uppercase;
+            p {
+                line-height: 1.35;
+                @include mobile {
+                    font-size: 1rem;
+                }
+            }
+            p:nth-child(1) {
+                color: #000;
+            }
+            @include mobile {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+        .sun-pageNav {
+            display: none;
+            @include pad {
+                display: block;
+                .sun-pagination {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: -19px;
+                    margin-bottom: 104px;
+                }
+                a {
+                    color: #555555;
+                }
+                .active {
+                    background: #000;
+                }
+                .active a {
+                    color: #fff;
+                }
+            }
+            @include mobile {
+                .sun-pagination {
+                    margin-top: 8px;
+                    margin-bottom: 56px;
+                }
+            }
+        }
