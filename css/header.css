@@ -25,6 +25,8 @@
   margin: 40px 0;
   margin-left: 64px;
   color: #FFFFFF; }
+  .global-nav li a:hover {
+    border-bottom: 1px solid #fff; }
 
 /* --------------------  header RWD------------ */
 @media (max-width: 992px) {

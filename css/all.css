@@ -144,6 +144,9 @@ a {
 *:after {
   box-sizing: border-box; }
 
+a {
+  display: block; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto; }
@@ -333,6 +336,8 @@ a {
   margin: 40px 0;
   margin-left: 64px;
   color: #FFFFFF; }
+  .global-nav li a:hover {
+    border-bottom: 1px solid #fff; }
 
 /* --------------------  header RWD------------ */
 @media (max-width: 992px) {
@@ -812,6 +817,8 @@ a {
   text-decoration: none;
   color: #ffffff;
   display: block; }
+  .footerInner a:hover {
+    border-bottom: 1px solid #fff; }
 
 .footerLinks .lineIcon {
   background: url("../images/ic_social_line.svg") no-repeat;

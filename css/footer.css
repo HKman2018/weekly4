@@ -14,6 +14,8 @@
   text-decoration: none;
   color: #ffffff;
   display: block; }
+  .footerInner a:hover {
+    border-bottom: 1px solid #fff; }
 
 .footerLinks .lineIcon {
   background: url("../images/ic_social_line.svg") no-repeat;
