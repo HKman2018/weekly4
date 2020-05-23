@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(function () {\n  $('.header .menu').click(function (e) {\n    e.preventDefault();\n    $('.header .global-nav').slideToggle();\n    console.log('globalNav');\n  });\n  $('#glassList>li[id!=\"opticalStyle\"]').hide();\n  $('.product-nav a').click(function () {\n    $('#glassList>li').hide();\n    $($(this).attr(\"href\")).show();\n    $('.product-nav a').removeClass('current');\n    $(this).addClass('current');\n    return false;\n  });\n});\n\n//# sourceURL=webpack:///./source/js/all.js?");
+eval("$(function () {\n  $('.header .menu').click(function (e) {\n    e.preventDefault();\n    $('.header .global-nav').slideToggle();\n    return false;\n  });\n  $('#glassList>li[id!=\"opticalStyle\"]').hide();\n  $('.product-nav a').click(function () {\n    $('#glassList>li').hide();\n    $($(this).attr(\"href\")).show();\n    $('.product-nav a').removeClass('current');\n    $(this).addClass('current');\n    return false;\n  });\n});\n\n//# sourceURL=webpack:///./source/js/all.js?");
 
 /***/ })
 
