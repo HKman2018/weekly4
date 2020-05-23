@@ -61,7 +61,8 @@
     left: 0;
     width: 100%;
     max-height: 240px;
-    text-align: center; }
+    text-align: center;
+    z-index: 1; }
   .header .global-nav a {
     margin: 0px;
     padding: 15px;
@@ -73,8 +74,6 @@
     text-align: center;
     width: 48px;
     height: 29px;
-    background: url("../images/logo.png") no-repeat; }
-  .header .menu:active .header .global-nav {
-    display: block; } }
+    background: url("../images/logo.png") no-repeat; } }
 
 /*# sourceMappingURL=header.css.map */
